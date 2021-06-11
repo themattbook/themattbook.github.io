@@ -24,11 +24,12 @@
     ></script>
   </head>
   <body class="flex flex-col min-h-screen">
-    <div
-      class="w-full sm:w-10/12 lg:w-10/12 xl:w-6/12 mx-auto p-6 sm:p-0 sm:py-6"
-    >
+    <div class="p-6 sm:p-0 sm:py-6">
       <header>
-        <section name="links" class="flex items-center h-16 text-gray-600">
+        <section
+          name="links"
+          class="container w-1/2 flex items-center mx-auto h-16 text-gray-600"
+        >
           <div class="mr-auto hidden sm:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -92,13 +93,19 @@
           </div>
         </section>
       </header>
-      <hr />
       <main class="flex-grow">
-        <section name="about-me">
+        <section name="about-me" class="mx-auto about-me">
           <div class="mx-auto sm:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="mx-auto sm:mx-none mt-6 sm:mt-0 fill-current text-indigo-700"
+              class="
+                mx-auto
+                sm:mx-none
+                mt-6
+                sm:mt-0
+                fill-current
+                text-indigo-700
+              "
               width="205.9138"
               height="28.2321"
               viewBox="0 0 205.9138 28.2321"
@@ -132,80 +139,71 @@
               />
             </svg>
           </div>
-          <div class="mb-12 sm:mb-16 text-center sm:text-left">
-            <h1
-              class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-800 mt-3 mb-3 sm:mt-16 sm:mb-10"
-            >
-              I am passionate about
-              <span class="text-indigo-700">web development.</span>
-            </h1>
-            <p
-              class="text-xl font-bold sm:font-medium sm:text-2xl text-gray-700 sm:mb-6"
-            >
-              Building websites, working with
-              <a
-                href="https://vuejs.org"
-                target="_blank"
-                class="underline font-bold"
-                >Vue</a
-              >, and learning new technologies are my idea of a good time.
-            </p>
-            <p class="hidden sm:block text-xl sm:text-2xl text-gray-700">
-              I started learning web development back in the days of MySpace;
-              editing the little bits of HTML to make my profile look amazing
-              was something I'd never imagined doing before. It made me curious
-              if I could build my own websites from scratch. That was many years
-              ago, and I've learned many other skills along the way. I build
-              REST APIs in
-              <a
-                href="https://nodejs.org/en/"
-                target="_blank"
-                class="underline font-bold"
-                >Node</a
-              >, robust web applications in
-              <a
-                href="https://vuejs.org"
-                target="_blank"
-                class="underline font-bold"
-                >Vue</a
-              >, and much more.
-            </p>
+          <div class="container w-1/2 mx-auto">
+            <div class="mb-12 sm:mb-16 text-center sm:text-left">
+              <h1
+                class="
+                  text-4xl
+                  sm:text-6xl
+                  lg:text-7xl
+                  leading-none
+                  font-extrabold
+                  tracking-tight
+                  text-gray-800
+                  mt-3
+                  mb-3
+                  sm:mt-16
+                  sm:mb-10
+                "
+              >
+                I am passionate about
+                <span class="text-indigo-600">web development.</span>
+              </h1>
+              <p
+                class="
+                  text-xl
+                  font-bold
+                  sm:font-medium
+                  sm:text-2xl
+                  text-gray-600
+                  sm:mb-6
+                "
+              >
+                Building websites, working with
+                <a
+                  href="https://vuejs.org"
+                  target="_blank"
+                  class="underline font-bold"
+                  >Vue</a
+                >, and learning new technologies are my idea of a good time.
+              </p>
+              <p class="hidden sm:block text-xl sm:text-2xl text-gray-600">
+                I started learning web development back in the days of MySpace;
+                editing the little bits of HTML to make my profile look amazing
+                was something I'd never imagined doing before. It made me
+                curious if I could build my own websites from scratch. That was
+                many years ago, and I've learned many other skills along the
+                way. I build REST APIs in
+                <a
+                  href="https://nodejs.org/en/"
+                  target="_blank"
+                  class="underline font-bold"
+                  >Node</a
+                >, robust web applications in
+                <a
+                  href="https://vuejs.org"
+                  target="_blank"
+                  class="underline font-bold"
+                  >Vue</a
+                >, and much more.
+              </p>
+            </div>
           </div>
         </section>
-        <section name="beer-example mb-6">
-          <p
-            class="codepen"
-            data-height="592"
-            data-theme-id="light"
-            data-default-tab="js,result"
-            data-user="themattbook"
-            data-slug-hash="MWyvwmg"
-            style="
-              height: 592px;
-              box-sizing: border-box;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border: 2px solid;
-              margin: 1em 0;
-              padding: 1em;
-            "
-            data-pen-title="Nothing But Beer"
-          >
-            <span
-              >See the Pen
-              <a href="https://codepen.io/themattbook/pen/MWyvwmg">
-                Nothing But Beer</a
-              >
-              by Matthew Sweet (<a href="https://codepen.io/themattbook"
-                >@themattbook</a
-              >) on <a href="https://codepen.io">CodePen</a>.</span
-            >
-          </p>
-          <script
-            async
-            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-          ></script>
+        <section name="code-examples" class="container w-1/2 mx-auto">
+          <div class="my-5">
+            <h1 class="font-bold text-4xl text-gray-600">Examples</h1>
+          </div>
         </section>
       </main>
     </div>
