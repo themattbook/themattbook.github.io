@@ -93,7 +93,7 @@
           </div>
         </section>
       </header>
-      <main class="flex-grow">
+      <main class="flex-grow p-10">
         <section name="about-me" class="mx-auto about-me">
           <div class="mx-auto sm:hidden">
             <svg
@@ -149,7 +149,6 @@
                   leading-none
                   font-extrabold
                   tracking-tight
-                  text-gray-800
                   mt-3
                   mb-3
                   sm:mt-16
@@ -165,8 +164,8 @@
                   font-bold
                   sm:font-medium
                   sm:text-2xl
-                  text-gray-600
                   sm:mb-6
+                  text-gray-600
                 "
               >
                 Building websites, working with
@@ -177,7 +176,19 @@
                   >Vue</a
                 >, and learning new technologies are my idea of a good time.
               </p>
-              <p class="hidden sm:block text-xl sm:text-2xl text-gray-600">
+              <p
+                class="
+                  hidden
+                  sm:block
+                  text-lg
+                  sm:text-2xl
+                  font-medium
+                  sm:leading-10
+                  space-y-6
+                  mb-6
+                  text-gray-600
+                "
+              >
                 I started learning web development back in the days of MySpace;
                 editing the little bits of HTML to make my profile look amazing
                 was something I'd never imagined doing before. It made me
@@ -200,9 +211,143 @@
             </div>
           </div>
         </section>
-        <section name="code-examples" class="container w-1/2 mx-auto">
-          <div class="my-5">
-            <h1 class="font-bold text-4xl text-gray-600">Examples</h1>
+        <section name="code-examples">
+          <div class="container w-1/2 mx-auto">
+            <div class="grid grid-cols-1 md:mt-20">
+              <!-- Example 1 -->
+              <div>
+                <h2
+                  class="
+                    sm:text-lg
+                    sm:leading-snug
+                    font-semibold
+                    tracking-wide
+                    uppercase
+                    text-indigo-500
+                    mb-3
+                  "
+                >
+                  Example 1
+                </h2>
+                <p
+                  class="
+                    text-xl
+                    sm:text-3xl
+                    lg:text-4xl
+                    leading-none
+                    font-extrabold
+                    tracking-tight
+                    mb-8
+                  "
+                >
+                  A simple URL shortener written in Vuejs 3.x utilizing the t.ly
+                  API
+                </p>
+                <p
+                  class="
+                    text-lg
+                    sm:text-2xl
+                    font-medium
+                    sm:leading-10
+                    space-y-6
+                    mb-6
+                    text-gray-600
+                  "
+                >
+                  The idea was to create a single-page application that merely
+                  consumes an API and displays the results in a meaningful way.
+                  This is probably the easiest project I've ever put together in
+                  Vue, but it's one of my favorites because it just works and it
+                  works well.
+                </p>
+                <p
+                  class="codepen"
+                  data-height="500"
+                  data-theme-id="dark"
+                  data-default-tab="js,result"
+                  data-user="themattbook"
+                  data-slug-hash="mdWzjEp"
+                  style="
+                    height: 500px;
+                    box-sizing: border-box;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 2px solid;
+                    margin: 1em 0;
+                    padding: 1em;
+                  "
+                  data-pen-title="mdWzjEp"
+                >
+                  <span
+                    >See the Pen
+                    <a href="https://codepen.io/themattbook/pen/mdWzjEp">
+                      mdWzjEp</a
+                    >
+                    by Matthew Sweet (<a href="https://codepen.io/themattbook"
+                      >@themattbook</a
+                    >) on <a href="https://codepen.io">CodePen</a>.</span
+                  >
+                </p>
+                <script
+                  async
+                  src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+                ></script>
+              </div>
+              <!-- Example 2 -->
+              <div class="mt-8 md:mt-16">
+                <h2
+                  class="
+                    sm:text-lg
+                    sm:leading-snug
+                    font-semibold
+                    tracking-wide
+                    uppercase
+                    text-indigo-500
+                    mb-3
+                  "
+                >
+                  Example 2
+                </h2>
+                <p
+                  class="
+                    text-xl
+                    sm:text-3xl
+                    lg:text-4xl
+                    leading-none
+                    font-extrabold
+                    tracking-tight
+                    mb-8
+                  "
+                >
+                  Top Headlines in Technology
+                </p>
+                <p
+                  class="
+                    text-lg
+                    sm:text-2xl
+                    font-medium
+                    sm:leading-10
+                    space-y-6
+                    mb-6
+                    text-gray-600
+                  "
+                >
+                  I wanted the control of only seeing tech headlines while
+                  having something attractive to stare at. This gave me a nice
+                  high-level view of what's going on in the tech industry
+                  without bothering my eyesight. Yet another Vue application;
+                  using Axios and NewsAPI.org. Code is
+                  <a
+                    class="underline"
+                    href="https://github.com/themattbook/vue-news-scrape"
+                    >here</a
+                  >, but unfortunately I can't deploy it outside of localhost
+                  without forking over hundreds of dollars.
+                </p>
+                <img src="assets/newsapi.png" class="mb-6" />
+              </div>
+            </div>
           </div>
         </section>
       </main>
